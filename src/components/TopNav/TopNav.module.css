@@ -1,0 +1,161 @@
+.navContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 16px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 50;
+  height: 60px;
+}
+
+.logoSection {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.logo {
+  width: 32px;
+  height: 32px;
+  object-fit: contain;
+}
+
+.brandName {
+  font-size: 24px;
+  font-weight: 700;
+  color: #333333;
+  font-family: cursive;
+  letter-spacing: -0.5px;
+}
+
+.rightSection {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.aboutButton {
+  background: none;
+  border: none;
+  padding: 8px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  color: #4a4a4a;
+}
+
+.cartButton {
+  position: relative;
+  padding: 8px;
+  cursor: pointer;
+  background: none;
+  border: none;
+  display: flex;
+  align-items: center;
+}
+
+.cartIcon {
+  height: 24px;
+  width: 24px;
+  color: #4a4a4a;
+}
+
+.cartCount {
+  position: absolute;
+  top: -4px;
+  right: -4px;
+  background-color: #ff7b6b;
+  color: white;
+  font-size: 12px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dropdown {
+  position: fixed;
+  top: 60px;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  height: calc(100vh - 60px);
+  z-index: 40;
+  animation: fadeIn 0.2s ease-out;
+}
+
+.dropdownContent {
+  background-color: white;
+  padding: 24px;
+  border-radius: 0 0 16px 16px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  animation: slideDown 0.3s ease-out;
+}
+
+.dropdownTitle {
+  font-size: 20px;
+  font-weight: 600;
+  color: #333333;
+  margin-bottom: 12px;
+}
+
+.dropdownText {
+  font-size: 14px;
+  color: #666666;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+.dropdownLinks {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.dropdownLinks a {
+  color: #4a4a4a;
+  text-decoration: none;
+  font-size: 16px;
+  padding: 8px 0;
+  border-bottom: 1px solid #eeeeee;
+}
+
+.dropdownLinks a:hover {
+  color: #ff7b6b;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes slideDown {
+  from {
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* Ensure touch targets are large enough on mobile */
+@media (max-width: 768px) {
+  .aboutButton,
+  .cartButton {
+    min-width: 44px;
+    min-height: 44px;
+  }
+
+  .dropdownLinks a {
+    padding: 12px 0;
+  }
+}

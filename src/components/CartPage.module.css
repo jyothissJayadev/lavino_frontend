@@ -1,0 +1,147 @@
+.cartContainer {
+    max-width: 100%;
+    padding: 20px;
+    background-color: #fff;
+    padding-bottom: 150px;
+  }
+  
+  .header {
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .header h1 {
+    flex: 1;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 500;
+    margin: 0;
+  }
+  
+  .backButton {
+    position: absolute;
+    left: 0;
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: #333;
+    cursor: pointer;
+    padding: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .cartItems {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .cartItem {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  }
+  
+  .itemInfo {
+    flex: 1;
+  }
+  
+  .itemInfo h3 {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 500;
+    margin-bottom: 5px;
+  }
+  
+  .itemInfo p {
+    margin: 0;
+    color: #666;
+    font-size: 14px;
+  }
+  
+  .quantityControls {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+  
+  .quantityButton {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    border: 1px solid #ddd;
+    background: #fff;
+    color: #666;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+  }
+  
+  .quantity {
+    font-size: 16px;
+    min-width: 20px;
+    text-align: center;
+  }
+  
+  .footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .totalInfo {
+    margin-bottom: 15px;
+  }
+  
+  .totalItems {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 8px;
+  }
+  
+  .total {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 500;
+  }
+  
+  .checkoutButton {
+    width: 100%;
+    padding: 15px;
+    background-color: #ff7b6b;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .checkoutButton:hover {
+    background-color: #ff6b5b;
+  }
+  
+  .emptyCart {
+    text-align: center;
+    color: #666;
+    margin-top: 40px;
+  }
